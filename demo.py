@@ -78,8 +78,8 @@ elif page == "Explanation":
 	st.write("**Step 5:** Review the models performance.")
 	st.write("Once the model is trained with YOLO I can view the performance graphs during training.")
 	col1, col2 = st.columns(2)
-	conf = Image.open("E:\\MachineLearning\\Portfolio\\STREAMLIT\\images\\potato_explain\\confusion_matrix.png")
-	graphs = Image.open("E:\\MachineLearning\\Portfolio\\STREAMLIT\\images\\potato_explain\\results.png")
+	conf = Image.open("confusion_matrix.png")
+	graphs = Image.open("results.png")
 	with col1:
 		st.image(conf,caption="Confusion Matrix")
 	with col2:
