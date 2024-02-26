@@ -38,9 +38,9 @@ if page == "Demo":
 				prediction_placeholder.success(f"Prediction: {prediction}")
 			else:
 				prediction_placeholder.error(f"Disease Detected: {prediction}")
-				if prediction == "Black Scruf" or "Dry Rot" or "Pink Rot":
+				if prediction == "Black Scruf" or prediction == "Dry Rot" or  prediction =="Pink Rot":
 					st.write("Cause of disease is **Fungus**.")
-				elif prediction =="Black Leg" or "Common Scab":
+				elif prediction =="Black Leg" or prediction =="Common Scab":
 					st.write("Cause of disease is **Bacteria**.")
 				else:
 					pass
